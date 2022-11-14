@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>조건문-2</title>
+</head>
+<body>
+<script>
+        // 2와 3의 공배수를 검사 프로그램
+        var value = window.prompt("숫자를 입력해주세요.");
+        alert(typeof(value));
+        // 숫자로 형변환. prompt에서 받은 vlaue값은 string타입. 아래코드는
+        // string타입을 강제로 정수 타입으로 바꾸고 있다.
+       value = parseInt(value);
+       // 이런식으로 타입 확인.
+        alert(typeof(value));
+
+        // &&는 논리 연산자로써 두 개의 조건이 true이면 true를 리턴한다.
+        // ||는 논리 연산자로써 둘 중의 하나의 존건만 true이면 true를 리턴한다.
+        if( (value % 2 == 0) && (value % 3 == 0) ) {
+            alert("2와 3의 공배수 입니다.");
+        }
+        else {
+            alert("2와 3의 공배수가 아닙니다.");
+        }
+
+        if( (value % 2 == 0) || (value % 3 == 0) ) {
+            alert("2거나 3의 공배수 입니다.");
+        }
+        else {
+            alert("2거나 3의 공배수가 아닙니다.");
+        }
+</script>
+</body>
+</html>

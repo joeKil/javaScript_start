@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>조건문-6</title>
+</head>
+<body>
+<script>
+    // 사용자로부터 입력받는 부분
+    var score = window.prompt("점수를 입력");
+
+    score = parseInt(score);
+
+    // 값 비교
+    // CPU의 참조를 가장 적게 받으려고 한다면, if~else if~else if 구문을 사용하는 것이 좋다.
+    if(score >= 90 && score <= 100 ){
+        document.write(score +"A");
+    }
+    else if(score >= 80 && score <= 89) {
+        document.write(score + "B");
+    }
+    else if(score >= 70 && score <= 79) {
+        document.write(score + "C");
+    }
+    else {
+        document.write("낙제");
+    }
+</script>
+</body>
+</html>
